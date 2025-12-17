@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  grpc-server:
+    container_name: grpc-server
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - "50051:50051"
+    volumes:
+      - ./app:/app
+      - ./proto:/proto
+    command: npm run dev

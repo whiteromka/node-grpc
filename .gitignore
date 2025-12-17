@@ -1,0 +1,23 @@
+.idea
+
+# зависимости
+app/node_modules/
+
+# логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# env
+.env
+.env.local
+.env.*.local
+
+# build
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
